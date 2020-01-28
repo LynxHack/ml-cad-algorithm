@@ -78,8 +78,10 @@ def L2norm(p1, p2):
 def AStarManhattan(p, start, end):
     return L1norm(p, start) + L1norm(p, end)
 
-## visuals set to True to show updates -> faster if no updates
+## Directions possible for search
 directions = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+
+## Astar implementation using heap and path backtracking
 def astar(grid, start, end, colorid, path, c, visuals):
     visited = set()
     copy = [row[:] for row in grid]
@@ -141,7 +143,7 @@ def astar(grid, start, end, colorid, path, c, visuals):
         return True
 
 
-## Implementation of Lee-Moores algorithm. Takes in a 
+## Implementation of Lee-Moores algorithm. Takes in a start and end point
 def leemore(grid, start, end, colorid, c, visuals):
     copy = [row[:] for row in grid]
     q = deque()
@@ -232,7 +234,8 @@ def solveroutes(method, grid, wires, c, visuals):
         time.sleep(1)
         updategrid(grid, c)
 
-
+        
+## Main Code
 # Read and setup grid
 graphicsenable = True
 method = "leemoore" ## {"leemoore", "astar"}
