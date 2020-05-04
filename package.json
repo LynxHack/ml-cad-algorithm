@@ -1,0 +1,22 @@
+{
+  "name": "ml-cad-router",
+  "version": "1.0.0",
+  "description": "Assignment 1",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LynxHack/CAD-Algorithm1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LynxHack/CAD-Algorithm1/issues"
+  },
+  "homepage": "https://github.com/LynxHack/CAD-Algorithm1#readme",
+  "dependencies": {
+    "log4js": "^6.2.1"
+  }
+}
