@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/LynxHack/CAD-Algorithm1#readme",
   "dependencies": {
-    "log4js": "^6.2.1"
+    "log4js": "^6.4.0"
   }
 }
